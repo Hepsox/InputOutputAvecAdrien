@@ -1,0 +1,14 @@
+<h1>Je suis le formulaire</h1>
+<form [formGroup]="userForm" (ngSubmit)="sendUser()">
+  <label for="firstname">Prénom</label>
+  <input
+    type="text"
+    id="firstname"
+    name="firstname"
+    formControlName="firstname"
+  />
+  <label for="lastname">Nom</label>
+  <input type="text" id="lastname" name="lastname" formControlName="lastname" />
+
+  <button type="submit">Enregistrer</button>
+</form>
